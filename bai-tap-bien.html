@@ -1,0 +1,33 @@
+numberdoC<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <input type="number"id="ly" placeholder="điểm lý"/>
+    <input type="number"id="hoa" placeholder="điểm Hoá"/>
+    <input type="number"id="sinh" placeholder="diem Sinh"/>
+    <input type="button" onclick="tinhtoan()"value="tinhtoan"/>
+    <p id="diemTB"></p>
+    <p id="diemTong"></p>
+ <script>
+     function tinhtoan() {
+       let diemLy = document.getElementById("ly").R;
+       alert(diemLy);
+        let diemHoa = document.getElementById("hoa").value;
+         let diemSinh = document.getElementById("sinh").value;
+         let diemTong = parseInt(diemLy) + parseInt(diemSinh) + parseInt(diemHoa)
+         // let diemTong = (diemLy + diemSinh + diemHoa);
+
+         let diemTB = (diemTong)/3;
+         document.getElementById("diemTB").innerHTML = diemTB;
+         document.getElementById("diemTong").innerHTML = diemTong;
+     }
+
+
+ </script>
+
+
+</body>
+</html>
